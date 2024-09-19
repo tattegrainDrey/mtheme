@@ -15,5 +15,10 @@ $black : #131413;
 }
 
 body {
+    margin: 0;
     background-color: $color1;
+
+    main {
+        margin: 6vh 7vw;
+    }
 }

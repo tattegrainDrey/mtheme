@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title><?php bloginfo('name') ?></title>
+    <script>
+        $(document).ready(function() {
+            var height = $(window).height();
+            var width = $(window).width();
+        })
+        console.log($width > 400)
+    </script>
 </head>
 
 <body>
     <header>
-        
+        <img src="https://mediatone.ca/menu/" alt="menu ico">
+        <?php the_custom_logo(); ?>
+        <img src="https://mediatone.ca/search/" alt="search ico">
+        <div></div>
     </header>

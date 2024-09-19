@@ -1,6 +1,8 @@
 header {
     height: 8vh;
     width: 100vw;
+    position: fixed;
+    top: 0;
 
     background-color: $color2;
     @include basic-shadow;

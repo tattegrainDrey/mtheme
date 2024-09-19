@@ -19,12 +19,18 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 
 body {
+  margin: 0;
   background-color: #F9EADC;
+}
+body main {
+  margin: 6vh 7vw;
 }
 
 header {
   height: 8vh;
   width: 100vw;
+  position: fixed;
+  top: 0;
   background-color: #704214;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
