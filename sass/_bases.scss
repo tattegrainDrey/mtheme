@@ -1,0 +1,15 @@
+$color1 : #F9EADC;
+$color2 : #704214;
+$color3 : #AB9487;
+$white : #FEFEFE;
+$black : #131413;
+
+@mixin basic-shadow {
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+body {
+    color: $color1;
+}
