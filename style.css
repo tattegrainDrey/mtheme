@@ -19,10 +19,12 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 
 body {
-  color: #F9EADC;
+  background-color: #F9EADC;
 }
 
 header {
+  height: 8vh;
+  width: 100vw;
   background-color: #704214;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
