@@ -28,7 +28,7 @@
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php
             $width = $_COOKIE['$width'];
-            echo "<script> console.log($width < 400)</script>";
+            echo "<script> console.log(" .$width. " < 400)</script>";
             ?>
             <?php the_custom_logo(); ?>
             <img src="https://mediatone.ca/search/" alt="search ico">
