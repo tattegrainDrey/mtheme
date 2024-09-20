@@ -41,12 +41,15 @@
                     else {
                         get_custom_logo();
                     }
+                    echo "<script> console.log('choice 1') </script>";
                 }
                 elseif (!has_custom_logo()){
                     do_favicon();
+                    echo "<script> console.log('choice 2') </script>";
                 }
                 else {
                     get_custom_logo();
+                    echo "<script> console.log('choice 3') </script>";
                 }
             ?>
             
