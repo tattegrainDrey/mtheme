@@ -30,6 +30,20 @@ body main {
   margin: 12vh 7vw 6vh;
 }
 
+h1 {
+  font-family: "Libre Baskerville";
+  font-size: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #F9EADC;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #AB9487;
+}
+
 header {
   height: 8vh;
   width: 100vw;
