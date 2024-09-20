@@ -29,10 +29,9 @@
             <?php
             if(isset($_COOKIE['width'])) {
                 $width = $_COOKIE['width'];
-                echo 'The value of the "width" cookie is: ' . $width;
-            } else {
-                echo 'The "width" cookie is not set.';
+                gettype($width);
             }
+
             ?>
             <?php the_custom_logo(); ?>
             <img src="https://mediatone.ca/search/" alt="search ico">
