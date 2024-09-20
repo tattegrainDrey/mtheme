@@ -23,17 +23,33 @@
 </head>
 
 <body>
+
+    <?php
+    if (isset($_COOKIE['width'])) {
+        $width = intval($_COOKIE['width']);
+        echo gettype($width);
+    }
+    ?>
     <header>
         <div class="fixtures">
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php
-            if(isset($_COOKIE['width'])) {
-                $width = intval($_COOKIE['width']);
-                echo gettype($width);
-            }
-
+                if (has_custom_logo() && has_site_icon()) {
+                    if ($width < 900) {
+                        do_favicon();
+                    }
+                    else {
+                        the_custom_logo();
+                    }
+                }
+                elseif (!has_custom_logo()){
+                    do_favicon();
+                }
+                else {
+                    the_custom_logo();
+                }
             ?>
-            <?php the_custom_logo(); ?>
+            
             <img src="https://mediatone.ca/search/" alt="search ico">
         </div>
         <div></div>
