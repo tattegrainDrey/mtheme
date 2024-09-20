@@ -28,7 +28,7 @@
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php
             if(isset($_COOKIE['width'])) {
-                $width = $_COOKIE['width'];
+                $width = intval($_COOKIE['width']);
                 echo gettype($width);
             }
 
