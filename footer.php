@@ -22,7 +22,12 @@
             $initials = get_initials(get_bloginfo('name'));
             echo "<h2>" . $initials . "</h2>";
             }
+
+            if (is_active_sidebar('footer_1')) {
+                dynamic_sidebar('footer_1');
+            }
         ?>
+        
     </div>
     <div class="minfoot">Copyright © 2024 Media Tone</div>
 </footer>
