@@ -35,21 +35,21 @@
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php
                 if (has_custom_logo() && has_site_icon()) {
+                    echo "<script> console.log('choice 1') </script>";
                     if ($width < 900) {
                         do_favicon();
                     }
                     else {
                         get_custom_logo();
                     }
-                    echo "<script> console.log('choice 1') </script>";
                 }
                 elseif (!has_custom_logo()){
-                    do_favicon();
                     echo "<script> console.log('choice 2') </script>";
+                    do_favicon();
                 }
                 else {
-                    get_custom_logo();
                     echo "<script> console.log('choice 3') </script>";
+                    get_custom_logo();
                 }
             ?>
             
