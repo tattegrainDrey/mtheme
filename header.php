@@ -39,14 +39,14 @@
                         do_favicon();
                     }
                     else {
-                        the_custom_logo();
+                        get_custom_logo();
                     }
                 }
                 elseif (!has_custom_logo()){
                     do_favicon();
                 }
                 else {
-                    the_custom_logo();
+                    get_custom_logo();
                 }
             ?>
             
