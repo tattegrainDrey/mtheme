@@ -8,12 +8,15 @@ function enqueue_styles()
 add_action('wp_enqueue_scripts', 'enqueue_styles');
 
 /* -------------------------------------- Theme support */
-add_theme_support('custom-logo', array(
-    'height' => 55,
-    'width'  => 'auto'
-));
+function my_theme_setup(){
+    add_theme_support('post-thumbnails');
+    add_theme_support('custom-logo', array(
+        'height' => 55,
+        'width'  => 'auto'
+    ));
+}
+add_action('after_setup_theme', 'my_theme_setup');
 
-add_theme_support('post-thumbnails');
 /* -------------------------------------- Widgets*/
 function enregistrer_sidebar()
 {

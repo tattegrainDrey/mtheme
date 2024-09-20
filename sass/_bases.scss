@@ -43,6 +43,16 @@ body {
         h3 {
             font-style: italic;
         }
+
+        a {
+            text-decoration: none;
+            color: $color3;
+            transition: all 0.5s;
+            
+            &:hover {
+                color: $color2;
+            }
+        }
     }
 
     .logo {
@@ -58,15 +68,7 @@ h1, h2, h3 {
 
     a {
         font-family: 'Libre Baskerville', serif;
-    }
-    
-    &:hover {
-        color: $color3;
-    }
-}
-
-a {
-    text-decoration: none;
+        text-decoration: none;
     color: $color1;
     transition: all 0.5s;
     
@@ -74,3 +76,5 @@ a {
         color: $color3;
     }
 }
+}
+
