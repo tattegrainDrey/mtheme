@@ -38,21 +38,21 @@
                 if (has_custom_logo() && has_site_icon()) {
                     echo "<script> console.log('choice 1') </script>";
                     if ($width < 900) {
-                        echo "<img src=" . get_site_icon_url() . "alt='site ico'>";
+                        echo "<img src=" . get_site_icon_url() . " alt='site ico'>";
                         echo "<script> console.log('choice 1.1') </script>";
                     }
                     else {
-                        //get_custom_logo();
+                        get_custom_logo();
                         echo "<script> console.log('choice 1.2') </script>";
                     }
                 }
                 elseif (!has_custom_logo()){
                     echo "<script> console.log('choice 2') </script>";
-                    echo "<img src=" . get_site_icon_url() . "alt='site ico'>";
+                    echo "<img src=" . get_site_icon_url() . " alt='site ico'>";
                 }
                 else {
                     echo "<script> console.log('choice 3') </script>";
-                    //get_custom_logo();
+                    get_custom_logo();
                 }
             ?>
             
