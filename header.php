@@ -36,12 +36,14 @@
             <?php
                 if (has_custom_logo() && has_site_icon()) {
                     echo "<script> console.log('choice 1') </script>";
-                    // if ($width < 900) {
-                    //     do_favicon();
-                    // }
-                    // else {
-                    //     get_custom_logo();
-                    // }
+                    if ($width < 900) {
+                        //do_favicon();
+                        echo "<script> console.log('choice 1.1') </script>";
+                    }
+                    else {
+                        //get_custom_logo();
+                        echo "<script> console.log('choice 1.2') </script>";
+                    }
                 }
                 elseif (!has_custom_logo()){
                     echo "<script> console.log('choice 2') </script>";
