@@ -25,3 +25,17 @@ body {
         margin: 12vh 7vw 6vh;
     }
 }
+h1 {
+    font-family: 'Libre Baskerville';
+    font-size: 700;
+}
+
+a {
+    text-decoration: none;
+    color: $color1;
+    transition: all 0.5s;
+
+    &:hover {
+        color: $color3;
+    }
+}
