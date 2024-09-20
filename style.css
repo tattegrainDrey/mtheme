@@ -27,7 +27,7 @@ body {
   background-color: #F9EADC;
 }
 body main {
-  margin: 6vh 7vw;
+  margin: 12vh 7vw 6vh;
 }
 
 header {
@@ -39,4 +39,11 @@ header {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+header .fixtures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: auto 3vw;
 }/*# sourceMappingURL=style.css.map */

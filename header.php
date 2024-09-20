@@ -10,16 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title><?php bloginfo('name') ?></title>
     <script>
-        $(document).ready(function() {
-            var width = $(window).width();
-        })
-        console.log(width ? width > 400 : "")
+       if (window.onload) {
+        var width = window.innerWidth;
+        console.log(width > 400)
+       }
     </script>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="fixtures">
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php the_custom_logo(); ?>
             <img src="https://mediatone.ca/search/" alt="search ico">

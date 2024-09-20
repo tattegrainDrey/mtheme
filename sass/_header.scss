@@ -6,4 +6,12 @@ header {
 
     background-color: $color2;
     @include basic-shadow;
+
+    .fixtures {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: auto 3vw;
+    }
 }
