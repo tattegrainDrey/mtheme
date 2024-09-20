@@ -33,11 +33,12 @@
     <header>
         <div class="fixtures">
             <img src="https://mediatone.ca/menu/" alt="menu ico">
+            
             <?php
                 if (has_custom_logo() && has_site_icon()) {
                     echo "<script> console.log('choice 1') </script>";
                     if ($width < 900) {
-                        //do_favicon();
+                        echo "<img src=" . get_site_icon_url() . "alt='site ico'>";
                         echo "<script> console.log('choice 1.1') </script>";
                     }
                     else {
@@ -47,7 +48,7 @@
                 }
                 elseif (!has_custom_logo()){
                     echo "<script> console.log('choice 2') </script>";
-                    // do_favicon();
+                    echo "<img src=" . get_site_icon_url() . "alt='site ico'>";
                 }
                 else {
                     echo "<script> console.log('choice 3') </script>";
