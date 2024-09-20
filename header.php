@@ -27,8 +27,12 @@
         <div class="fixtures">
             <img src="https://mediatone.ca/menu/" alt="menu ico">
             <?php
-            $width = $_COOKIE['$width'];
-            echo $width;
+            if(isset($_COOKIE['width'])) {
+                $width = $_COOKIE['width'];
+                echo 'The value of the "width" cookie is: ' . $width;
+            } else {
+                echo 'The "width" cookie is not set.';
+            }
             ?>
             <?php the_custom_logo(); ?>
             <img src="https://mediatone.ca/search/" alt="search ico">
