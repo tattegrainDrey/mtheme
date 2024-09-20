@@ -69,4 +69,21 @@ header .fixtures {
   align-items: center;
   height: 100%;
   margin: auto 3vw;
+}
+
+footer {
+  background-color: #AB9487;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .maxfoot {
+  background-color: #AB9487;
+}
+footer .maxfoot .logo {
+  background-color: #F9EADC;
+  border-radius: 25px;
+}
+footer .minfoot {
+  background-color: #704214;
 }/*# sourceMappingURL=style.css.map */

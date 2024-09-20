@@ -59,7 +59,7 @@
                 }
             ?>
             
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="search ico">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/search.svg'); ?>" alt="search ico">
         </div>
         <div></div>
     </header>
