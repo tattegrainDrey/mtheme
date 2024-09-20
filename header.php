@@ -55,7 +55,7 @@
                     the_custom_logo();
                 }
                 else {
-                    the_embed_site_title();
+                    echo "<a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . " </a>";                  
                 }
             ?>
             
