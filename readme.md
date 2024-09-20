@@ -1,18 +1,15 @@
+info
 <?php get_header(); ?>
 <main>
     <?php
     if (have_posts()):
         echo "<section class='index'>";
+        $post_count = 0; // Initialize a counter
+        $total_posts = wp_count_posts()->publish; // Get total number of published posts
+        
         while (have_posts()):
             the_post();
-            $tags = get_the_tags();
-            if ($tags) {
-                $tag_links = array(); // Create an array to hold the tag links
-
-                foreach ($tags as $tag) {
-                    $tag_links[] = '<a href="' . esc_url(get_tag_link($tag->term_id)) . '">' . esc_html($tag->name) . '</a>';
-                }
-            }
+            $post_count++; // Increment the counter
     ?>
             <article>
                 <div class="metainfo">
@@ -20,13 +17,14 @@
                         <h3><?php the_time('j F Y') ?></h3>
                         <h3><?php the_author() ?> </h3>
                     </div>
-                    <div class="line2 tags">
-                        <?php echo implode(' · ', $tag_links); ?>
-                    </div>
                 </div>
                 <h2><?php the_title(); ?></h2>
+                <?php the_post_thumbnail(); ?> 
                 <?php the_excerpt(); ?>
             </article>
+            <?php if ($post_count < $total_posts): ?>
+                <hr> <!-- Only add <hr> if this is not the last post -->
+            <?php endif; ?>
     <?php
         endwhile;
         echo "</section>";

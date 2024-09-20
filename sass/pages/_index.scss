@@ -1,0 +1,15 @@
+section.index {
+    article {
+        .metainfo {
+            .line1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
