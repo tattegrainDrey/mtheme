@@ -3,9 +3,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3vh;
+    position: relative;
 
     .maxfoot {
         background-color: $color3;
+        padding-bottom: 3vh;
+
         .logo {
             background-color: $color1;
             border-radius: 25px;
@@ -14,5 +18,9 @@ footer {
 
     .minfoot {
         background-color: $color2;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        height: 3vh;
     }
 }

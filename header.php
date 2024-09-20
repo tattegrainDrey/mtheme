@@ -55,7 +55,7 @@
                     the_custom_logo();
                 }
                 else {
-                    echo "<a href=" . get_bloginfo('url') . "> <h1>" . get_bloginfo('name') . "<h1> </a>";                  
+                    echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> <h1>";                  
                 }
             ?>
             

@@ -43,17 +43,16 @@ body {
     }
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 700;
+    color: $color1;
+    transition: all 0.5s;
+    
+    &:hover {
+        color: $color3;
+    }
 }
 
 a {
     text-decoration: none;
-    color: $color1;
-    transition: all 0.5s;
-
-    &:hover {
-        color: $color3;
-    }
 }
