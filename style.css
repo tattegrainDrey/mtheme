@@ -46,4 +46,8 @@ header .fixtures {
   align-items: center;
   height: 100%;
   margin: auto 3vw;
+}
+header .fixtures .logo {
+  height: 55px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
