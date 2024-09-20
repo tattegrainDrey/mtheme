@@ -46,13 +46,16 @@
                         echo "<script> console.log('choice 1.2') </script>";
                     }
                 }
-                elseif (!has_custom_logo()){
+                elseif (!has_custom_logo() && has_site_icon()){
                     echo "<script> console.log('choice 2') </script>";
                     echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
                 }
-                else {
+                elseif (!has_site_icon() && has_custom_logo()) {
                     echo "<script> console.log('choice 3') </script>";
                     the_custom_logo();
+                }
+                else {
+                    the_embed_site_title();
                 }
             ?>
             
