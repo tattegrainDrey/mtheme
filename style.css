@@ -18,6 +18,10 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
   display: none;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 html {
   margin: 0 !important;
 }
@@ -28,10 +32,15 @@ body {
 }
 body main {
   margin: 12vh 7vw 6vh;
+  height: 92vh;
+}
+body .logo {
+  height: 55px;
+  width: auto;
 }
 
 h1 {
-  font-family: "Libre Baskerville";
+  font-family: "Libre Baskerville", serif;
   font-size: 700;
 }
 
@@ -60,8 +69,4 @@ header .fixtures {
   align-items: center;
   height: 100%;
   margin: auto 3vw;
-}
-header .fixtures .logo {
-  height: 55px;
-  width: auto;
 }/*# sourceMappingURL=style.css.map */

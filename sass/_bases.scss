@@ -10,23 +10,41 @@ $black : #131413;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+@mixin reverse-shadow {
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 #wpadminbar {
     display: none; //avoid showing tech bar while editing theme
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
     margin: 0 !important;
 }
+
 body {
     margin: 0 !important;
     background-color: $color1;
 
     main {
         margin: 12vh 7vw 6vh;
+        height: 92vh;
+    }
+
+    .logo {
+        height: 55px;
+        width: auto;
     }
 }
+
 h1 {
-    font-family: 'Libre Baskerville';
+    font-family: 'Libre Baskerville', serif;
     font-size: 700;
 }
 

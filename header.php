@@ -20,14 +20,30 @@
             document.cookie = "width = " + width;
         })
     </script>
+
 </head>
 
 <body>
-
     <?php
+    function get_initials($site_name) {
+        $words = explode(' ', $site_name); // Split the string into words
+        $initials = '';
+    
+        foreach ($words as $word) {
+            if (!empty($word)) {
+                $initials .= strtoupper($word[0]); // Get the first letter and convert to uppercase
+            }
+        }
+    
+        return $initials;
+    }
+    
+    $initials = get_initials( get_bloginfo('name'));
+    
+
+
     if (isset($_COOKIE['width'])) {
         $width = intval($_COOKIE['width']);
-        echo gettype($width);
     }
     ?>
     <header>
