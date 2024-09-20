@@ -35,8 +35,12 @@ body main {
   height: 92vh;
 }
 body .logo {
-  height: 55px;
+  height: 80px;
   width: auto;
+}
+body svg {
+  width: 55px;
+  height: auto;
 }
 
 h1 {

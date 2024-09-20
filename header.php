@@ -48,8 +48,7 @@
     ?>
     <header>
         <div class="fixtures">
-            <img src="https://mediatone.ca/menu/" alt="menu ico">
-            
+            <div href="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>"></div>
             <?php
                 if (has_custom_logo() && has_site_icon()) {
                     echo "<script> console.log('choice 1') </script>";
@@ -75,7 +74,8 @@
                 }
             ?>
             
-            <img src="https://mediatone.ca/search/" alt="search ico">
+            
+            <div href="<?php echo esc_url(get_template_directory_uri() . '/icons/search.svg'); ?>"></div>
         </div>
         <div></div>
     </header>
