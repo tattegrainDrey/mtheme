@@ -42,7 +42,7 @@
                         echo "<script> console.log('choice 1.1') </script>";
                     }
                     else {
-                       echo "<img src=" . get_custom_logo() . " alt='site logo' class='logo long'>";
+                        the_custom_logo();
                         echo "<script> console.log('choice 1.2') </script>";
                     }
                 }
@@ -52,7 +52,7 @@
                 }
                 else {
                     echo "<script> console.log('choice 3') </script>";
-                   echo "<img src=" . get_custom_logo() . " alt='site logo' class='logo long'>";
+                    the_custom_logo();
                 }
             ?>
             
