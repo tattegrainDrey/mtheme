@@ -11,16 +11,13 @@
     <title><?php bloginfo('name') ?></title>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            var width;
-            window.addEventListener("resize", function() {
-                var width = window.innerWidth;
-                return width;
-            })
+            var width = window.innerWidth;
             document.cookie = "width = " + width;
+        })
 
-            console.log(width < 400);
-            
-            return width;
+        window.addEventListener("resize", function() {
+            var width = window.innerWidth;
+            document.cookie = "width = " + width;
         })
     </script>
 </head>
@@ -29,6 +26,10 @@
     <header>
         <div class="fixtures">
             <img src="https://mediatone.ca/menu/" alt="menu ico">
+            <?php
+            $width = $_COOKIE['$width'];
+            echo "<script> console.log($width < 400)</script>";
+            ?>
             <?php the_custom_logo(); ?>
             <img src="https://mediatone.ca/search/" alt="search ico">
         </div>
