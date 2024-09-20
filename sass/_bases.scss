@@ -35,6 +35,14 @@ body {
     main {
         margin: 12vh 7vw 6vh;
         height: 92vh;
+
+        h1, h2, h3 {
+            color: $color2;
+        }
+
+        h3 {
+            font-style: italic;
+        }
     }
 
     .logo {
