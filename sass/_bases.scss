@@ -47,6 +47,10 @@ h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
     color: $color1;
     transition: all 0.5s;
+
+    a {
+        font-family: 'Libre Baskerville', serif;
+    }
     
     &:hover {
         color: $color3;

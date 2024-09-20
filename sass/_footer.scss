@@ -21,9 +21,14 @@ footer {
 
     .minfoot {
         background-color: $color2;
+        color: $white;
         width: 100vw;
         position: absolute;
         bottom: 0;
         height: 3vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
