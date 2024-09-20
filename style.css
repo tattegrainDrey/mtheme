@@ -18,8 +18,12 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
   display: none;
 }
 
+html {
+  margin: 0 !important;
+}
+
 body {
-  margin: 0;
+  margin: 0 !important;
   background-color: #F9EADC;
 }
 body main {

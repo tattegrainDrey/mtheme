@@ -11,17 +11,18 @@
     <title><?php bloginfo('name') ?></title>
     <script>
         $(document).ready(function() {
-            var height = $(window).height();
             var width = $(window).width();
         })
-        console.log($width > 400)
+        console.log(width ? width > 400 : "")
     </script>
 </head>
 
 <body>
     <header>
-        <img src="https://mediatone.ca/menu/" alt="menu ico">
-        <?php the_custom_logo(); ?>
-        <img src="https://mediatone.ca/search/" alt="search ico">
+        <div>
+            <img src="https://mediatone.ca/menu/" alt="menu ico">
+            <?php the_custom_logo(); ?>
+            <img src="https://mediatone.ca/search/" alt="search ico">
+        </div>
         <div></div>
     </header>
