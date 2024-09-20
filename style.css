@@ -38,10 +38,6 @@ body .logo {
   height: 80px;
   width: auto;
 }
-body svg {
-  width: 55px;
-  height: auto;
-}
 
 h1 {
   font-family: "Libre Baskerville", serif;

@@ -25,30 +25,15 @@
 
 <body>
     <?php
-    function get_initials($site_name) {
-        $words = explode(' ', $site_name); // Split the string into words
-        $initials = '';
     
-        foreach ($words as $word) {
-            if (!empty($word)) {
-                $initials .= strtoupper($word[0]); // Get the first letter and convert to uppercase
-            }
-        }
-    
-        return $initials;
-    }
-    
-    $initials = get_initials( get_bloginfo('name'));
-    
-
-
     if (isset($_COOKIE['width'])) {
         $width = intval($_COOKIE['width']);
     }
     ?>
     <header>
         <div class="fixtures">
-            <div href="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>"></div>
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
+            
             <?php
                 if (has_custom_logo() && has_site_icon()) {
                     echo "<script> console.log('choice 1') </script>";
@@ -74,8 +59,7 @@
                 }
             ?>
             
-            
-            <div href="<?php echo esc_url(get_template_directory_uri() . '/icons/search.svg'); ?>"></div>
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="search ico">
         </div>
         <div></div>
     </header>
