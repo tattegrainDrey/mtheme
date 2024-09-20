@@ -29,7 +29,7 @@
             <?php
             if(isset($_COOKIE['width'])) {
                 $width = $_COOKIE['width'];
-                gettype($width);
+                echo gettype($width);
             }
 
             ?>
