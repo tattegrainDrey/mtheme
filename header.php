@@ -12,12 +12,16 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
+            var height = window.innerHeight;
             document.cookie = "width = " + width;
+            document.cookie = "height = " + height;
         })
 
         window.addEventListener("resize", function() {
             var width = window.innerWidth;
+            var height = window.innerHeight;
             document.cookie = "width = " + width;
+            document.cookie = "height = " + height;
         })
     </script>
 
@@ -28,6 +32,9 @@
     
     if (isset($_COOKIE['width'])) {
         $width = intval($_COOKIE['width']);
+    }
+    if (isset($_COOKIE['height'])) {
+        $height = intval($_COOKIE['height']);
     }
     ?>
     <header>
