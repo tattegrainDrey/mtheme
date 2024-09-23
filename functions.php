@@ -30,6 +30,15 @@ function enregistrer_sidebar()
 }
 add_action('widgets_init', 'enregistrer_sidebar');
 
+/* --------------------------------------  Menu*/
+function save_menu()
+{
+    register_nav_menus(array(
+        'main-menu' => 'Header Menu'
+    ));
+}
+add_action('init', 'save_menu', 0);
+
 /* -------------------------------------- Possibly adding get_search_form to Menu*/
 
 function add_search_form_to_menu($items, $args) {
@@ -42,13 +51,3 @@ function add_search_form_to_menu($items, $args) {
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_search_form_to_menu', 10, 2);
-
-
-/* --------------------------------------  Menu*/
-function save_menu()
-{
-    register_nav_menus(array(
-        'main-menu' => 'Header Menu'
-    ));
-}
-add_action('init', 'save_menu', 0);
