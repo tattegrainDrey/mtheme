@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main id="main">
     <?php
-    if ((is_home() || is_front_page()) && have_posts()):
+    if (have_posts()):
         echo "<section id='section' class='home'>";
         while (have_posts()):
             the_post();
