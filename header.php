@@ -25,7 +25,7 @@
             document.cookie = "height = " + height;
 
             //add get_search_form to hamburger
-            var theLast = document.getElementById('hamburger').lastChild;
+            var theLast = document.getElementById('hamburger').lastElementChild;
             console.log(theLast);
         })
 
