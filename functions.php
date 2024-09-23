@@ -42,7 +42,10 @@ add_action('init', 'save_menu', 0);
 /* -------------------------------------- Possibly adding get_search_form to Menu*/
 
 function add_search_form_to_menu($items, $args) {
-    $items = get_search_form();
+    if ($args->theme_location == 'main-menu') {
+        $search_form = get_search_form();
+        $items .= $search_form;
+    }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_search_form_to_menu', 10, 2);
