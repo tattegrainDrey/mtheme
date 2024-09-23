@@ -82,7 +82,9 @@
                 'menu'                 => 'main-menu',
                 'menu_id'              => 'hamburger',
                 'container'            => 'ul',
-                'container_class'      => 'bigScreen'
+                'container_class'      => 'bigScreen',
+                'before'               => 'hello',
+                'after'                => 'bye'
             ))
             ?> 
 
