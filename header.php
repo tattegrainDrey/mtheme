@@ -13,6 +13,8 @@
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
+            var index = document.querySelector(main).offsetHeight;
+            console.log(index)
             document.cookie = "width = " + width;
             document.cookie = "height = " + height;
         })
