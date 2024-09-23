@@ -86,8 +86,6 @@
                     echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";                  
                 }
             ?>
-            
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/search.svg'); ?>" alt="search ico">
 
             <?php wp_nav_menu(array(
                 'menu'                 => 'main-menu',
