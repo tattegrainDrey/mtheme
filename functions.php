@@ -43,7 +43,14 @@ add_action('init', 'save_menu', 0);
 
 function add_search_form_to_menu($items, $args) {
     if ($args->theme_location == 'main-menu') {
-        $search_form = get_search_form();
+        $search_form = '<li class="menu-item search-form">' .
+            '<form role="search" method="get" class="search-form" action="' . home_url('/') . '">' .
+            '<label>' .
+            '<input type="search" placeholder="Search …" value="" name="s" class="search-field" />' .
+            '</label>' .
+            '<button type="submit" class="search-submit">Search</button>' .
+            '</form>' .
+            '</li>';
         $items .= $search_form;
     }
     return $items;
