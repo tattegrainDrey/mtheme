@@ -77,6 +77,16 @@
             ?>
             
             <img src="<?php echo esc_url(get_template_directory_uri() . '/icons/search.svg'); ?>" alt="search ico">
+
+            <?php wp_nav_menu(array(
+                'menu'                 => 'main-menu',
+                'menu_id'              => 'hamburger',
+                'container'            => 'ul',
+                'container_class'      => 'bigScreen'
+            )) ?> 
+            <form action="" id="search">
+                <input type="search" name="search">
+                <input type="image" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>">
+            </form>
         </div>
-        <div></div>
     </header>

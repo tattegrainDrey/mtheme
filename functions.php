@@ -29,3 +29,12 @@ function enregistrer_sidebar()
     ));
 }
 add_action('widgets_init', 'enregistrer_sidebar');
+
+/* --------------------------------------  Menu*/
+function save_menu()
+{
+    register_nav_menus(array(
+        'main-menu' => 'Header Menu'
+    ));
+}
+add_action('init', 'save_menu', 0);
