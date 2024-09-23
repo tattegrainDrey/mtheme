@@ -33,7 +33,7 @@ add_action('widgets_init', 'enregistrer_sidebar');
 /* -------------------------------------- Possibly adding get_search_form to Menu*/
 
 function add_search_form_to_menu($items, $args) {
-    if ($args->theme_location == 'your_menu_location') { // Replace with your menu location
+    if ($args->theme_location == 'main-menu') { // Replace with your menu location
         ob_start();
         get_search_form(); // Get the search form
         $search_form = ob_get_clean(); // Capture the output
