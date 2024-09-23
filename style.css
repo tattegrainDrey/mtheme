@@ -88,10 +88,25 @@ header {
 }
 header .fixtures {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
   margin: auto 3vw;
+  position: relative;
+}
+header .fixtures h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+header .fixtures .custom-logo {
+  margin: auto calc(50% - 75px);
+  position: absolute;
+  left: 0;
+}
+header .fixtures .logo, header .fixtures .ico {
+  margin: auto calc(50% - 40px);
+  position: absolute;
+  left: 0;
 }
 header .fixtures ul {
   position: fixed;

@@ -10,10 +10,26 @@ header {
 
     .fixtures {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         height: 100%;
         margin: auto 3vw;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        .custom-logo {
+            margin: auto calc(100%/2 - 75px);
+            position: absolute;
+            left: 0;
+        }
+        .logo, .ico {
+            margin: auto calc(100%/2 - 40px);
+            position: absolute;
+            left: 0;
+        }
 
         ul {
             position: fixed;
