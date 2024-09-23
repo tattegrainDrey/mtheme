@@ -25,7 +25,8 @@
             document.cookie = "height = " + height;
 
             //add get_search_form to hamburger
-            //document.getElementById('hamburger').innerHTML += ''
+            var theLast = document.getElementById('hamburger').lastChild;
+            console.log(theLast);
         })
 
         window.addEventListener("resize", function() {
