@@ -98,7 +98,7 @@ header .fixtures h1 {
   width: 100%;
   text-align: center;
 }
-header .fixtures .custom-logo {
+header .fixtures .custom-logo-link {
   margin: auto calc(50% - 75px);
   position: absolute;
   left: 0;
