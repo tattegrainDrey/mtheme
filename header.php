@@ -13,8 +13,16 @@
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
-            var index = document.getElementById('main').offsetHeight;
-            console.log(index)
+            var sect = document.getElementById('section').offsetHeight;
+            var index = document.getElementById('main');
+            if ((sect/height) < 0.84) {
+                index.style.height = '84vh';
+            }
+            else {
+                index.style.height = '100%';
+            }
+            console.log(sect)
+            console.log(index.offsetHeight)
             document.cookie = "width = " + width;
             document.cookie = "height = " + height;
         })
