@@ -26,8 +26,8 @@
 
             //add get_search_form to hamburger
             var theLast = document.getElementById('hamburger').lastElementChild;
-            console.log(theLast);
-            console.log(typeof theLast);
+            var peeka = document.getElementById('search');
+            theLast.insertAdjacentElement("afterend", peeka);
         })
 
         window.addEventListener("resize", function() {
