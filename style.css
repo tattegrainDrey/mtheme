@@ -31,8 +31,22 @@ body {
   background-color: #F9EADC;
 }
 body main {
-  margin: 12vh 7vw 6vh;
-  height: 92vh;
+  margin: 12vh 7vw 4vh;
+  height: 78vh;
+}
+body main h1, body main h2, body main h3 {
+  color: #704214;
+}
+body main h3 {
+  font-style: italic;
+}
+body main a {
+  text-decoration: none;
+  color: #AB9487;
+  transition: all 0.5s;
+}
+body main a:hover {
+  color: #704214;
 }
 body .logo {
   height: 80px;
@@ -44,16 +58,13 @@ h1, h2, h3 {
   color: #F9EADC;
   transition: all 0.5s;
 }
-h1:hover, h2:hover, h3:hover {
-  color: #AB9487;
-}
-
-a {
+h1 a, h2 a, h3 a {
+  font-family: "Libre Baskerville", serif;
   text-decoration: none;
   color: #F9EADC;
   transition: all 0.5s;
 }
-a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover {
   color: #AB9487;
 }
 
@@ -96,8 +107,24 @@ footer .maxfoot .logo {
 }
 footer .minfoot {
   background-color: #704214;
+  color: #FEFEFE;
   width: 100vw;
   position: absolute;
   bottom: 0;
   height: 3vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/************************* pages */
+section.index article .metainfo .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+section.index article h2 {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
