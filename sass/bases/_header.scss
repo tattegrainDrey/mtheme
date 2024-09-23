@@ -42,6 +42,10 @@ header {
                     color: $color1;
                 }
             }
+
+            form {
+                display: flex;
+            }
         }
     }
 }

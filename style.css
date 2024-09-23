@@ -121,6 +121,9 @@ header .fixtures ul a {
 header .fixtures ul a:hover {
   color: #F9EADC;
 }
+header .fixtures ul form {
+  display: flex;
+}
 
 footer {
   background-color: #AB9487;
