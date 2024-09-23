@@ -109,12 +109,9 @@ header .fixtures ul {
   row-gap: 1vh;
   font-size: x-large;
   background-color: #AB9487;
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 header .fixtures ul a {
   text-decoration: none;

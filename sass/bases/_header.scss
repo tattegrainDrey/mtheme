@@ -31,8 +31,7 @@ header {
             row-gap: 1vh;
             font-size: x-large;
             background-color: #AB9487;
-            @include basic-shadow;
-            @include inset-shadow;
+            @include basinset-shadow;
 
             a {
                 text-decoration: none;

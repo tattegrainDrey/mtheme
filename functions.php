@@ -46,6 +46,7 @@ function add_search_form_to_menu($items, $args) {
         ob_start();
         get_search_form(); // Get the search form
         $search_form = ob_get_clean(); // Capture the output
+        echo $search_form;
         $items .= '<li class="menu-item search-form">' . $search_form . '</li>'; // Add it to the menu
     }
     return $items;
