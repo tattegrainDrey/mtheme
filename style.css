@@ -33,7 +33,9 @@ body {
 body main {
   margin: 12vh 7vw 4vh;
 }
-body main h1, body main h2, body main h3 {
+body main h1,
+body main h2,
+body main h3 {
   color: #704214;
 }
 body main h3 {
@@ -52,18 +54,24 @@ body .logo {
   width: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Libre Baskerville", serif;
   color: #F9EADC;
   transition: all 0.5s;
 }
-h1 a, h2 a, h3 a {
+h1 a,
+h2 a,
+h3 a {
   font-family: "Libre Baskerville", serif;
   text-decoration: none;
   color: #F9EADC;
   transition: all 0.5s;
 }
-h1 a:hover, h2 a:hover, h3 a:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover {
   color: #AB9487;
 }
 
@@ -84,6 +92,37 @@ header .fixtures {
   align-items: center;
   height: 100%;
   margin: auto 3vw;
+}
+header .fixtures ul {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  height: 42vh;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1vh;
+  font-size: x-large;
+  background-color: #AB9487;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+header .fixtures ul a {
+  text-decoration: none;
+  color: #704214;
+  transition: all 0.5s;
+}
+header .fixtures ul a:hover {
+  color: #F9EADC;
 }
 
 footer {

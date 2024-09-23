@@ -84,9 +84,5 @@
                 'container'            => 'ul',
                 'container_class'      => 'bigScreen'
             )) ?> 
-            <form action="" id="search">
-                <input type="search" name="search">
-                <input type="image" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>">
-            </form>
         </div>
     </header>

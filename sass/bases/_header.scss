@@ -14,5 +14,35 @@ header {
         align-items: center;
         height: 100%;
         margin: auto 3vw;
+
+        ul {
+            position: fixed;
+            top: 8vh;
+            left: 0;
+            height: 42vh;
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 1vh;
+            font-size: x-large;
+            background-color: #AB9487;
+            @include basic-shadow;
+            @include inset-shadow;
+
+            a {
+                text-decoration: none;
+                color: $color2;
+                transition: all 0.5s;
+    
+                &:hover {
+                    color: $color1;
+                }
+            }
+        }
     }
 }

@@ -11,9 +11,15 @@ $black : #131413;
 }
 
 @mixin reverse-shadow {
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@mixin inset-shadow {
+    -webkit-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 #wpadminbar {
@@ -36,7 +42,9 @@ body {
         margin: 12vh 7vw 4vh;
         //height: 84vh;
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: $color2;
         }
 
@@ -48,7 +56,7 @@ body {
             text-decoration: none;
             color: $color3;
             transition: all 0.5s;
-            
+
             &:hover {
                 color: $color2;
             }
@@ -61,7 +69,9 @@ body {
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Libre Baskerville', serif;
     color: $color1;
     transition: all 0.5s;
@@ -69,12 +79,11 @@ h1, h2, h3 {
     a {
         font-family: 'Libre Baskerville', serif;
         text-decoration: none;
-    color: $color1;
-    transition: all 0.5s;
-    
-    &:hover {
-        color: $color3;
+        color: $color1;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $color3;
+        }
     }
 }
-}
-
