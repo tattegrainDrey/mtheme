@@ -42,17 +42,7 @@ add_action('init', 'save_menu', 0);
 /* -------------------------------------- Possibly adding get_search_form to Menu*/
 
 function add_search_form_to_menu($items, $args) {
-    if ($args->theme_location == 'main-menu') { 
-        ob_start();
-        get_search_form(); 
-        $search_form = ob_get_clean();
-        if (!empty($search_form)) {
-            error_log('Search Form: ' . $search_form); // Log to debug
-            $items .= '<li class="menu-item search-form">' . $search_form . '</li>';
-        } else {
-            error_log('Search form is empty');
-        }
-    }
+    $items = get_search_form();
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_search_form_to_menu', 10, 2);
