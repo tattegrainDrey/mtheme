@@ -21,18 +21,7 @@
                 main.style.height = '100%';
             }
             document.cookie = "width = " + width;
-            document.cookie = "height = " + height;
-
-            //add get_search_form to hamburger
-            var theLast = document.getElementById('hamburger').lastElementChild;
-            var peeka = document.getElementById('search');
-            theLast.insertAdjacentElement("afterend", peeka);  
-        })
-
-        window.addEventListener("load", () => {
-            // var theLast = document.getElementById('hamburger').lastElementChild;
-            // var peeka = document.getElementById('search');
-            // theLast.insertAdjacentElement("afterend", peeka);  
+            document.cookie = "height = " + height; 
         })
 
         window.addEventListener("resize", () => {
