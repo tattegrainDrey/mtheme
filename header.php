@@ -29,7 +29,13 @@
             theLast.insertAdjacentElement("afterend", peeka);  
         })
 
-        window.addEventListener("resize", function() {
+        window.addEventListener("load", () => {
+            var theLast = document.getElementById('hamburger').lastElementChild;
+            var peeka = document.getElementById('search');
+            theLast.insertAdjacentElement("afterend", peeka);  
+        })
+
+        window.addEventListener("resize", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
             var sect = document.getElementById('section').offsetHeight;
