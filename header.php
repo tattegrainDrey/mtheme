@@ -28,10 +28,7 @@
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);  
 
-            function bourgeois() {
-                var hammie = document.getElementById('hamburger');
-                hammie.style.display == "flex" ? hammie.style.display = "none" : hammie.style.display = "flex";
-            }
+            
         })
 
         window.addEventListener("resize", function() {

@@ -31,6 +31,12 @@
     </div>
     <div class="minfoot">Copyright © 2024 Media Tone</div>
 </footer>
+<script>
+    function bourgeois() {
+        var hammie = document.getElementById('hamburger');
+        hammie.style.display == "flex" ? hammie.style.display = "none" : hammie.style.display = "flex";
+    }
+</script>
 <?php wp_footer(); ?>
 </body>
 
