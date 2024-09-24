@@ -27,6 +27,11 @@
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);  
+
+            function bourgeois() {
+                var hammie = document.getElementById('hamburger');
+                hammie.style.display == "flex" ? hammie.style.display = "none" : hammie.style.display = "flex";
+            }
         })
 
         window.addEventListener("resize", function() {
@@ -58,7 +63,7 @@
     ?>
     <header>
         <div class="fixtures">
-            <img id="menuico" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
+            <img id="menuico" onclick="bourgeois" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
 
             <?php
             if (has_custom_logo() && has_site_icon()) {

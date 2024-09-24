@@ -93,6 +93,10 @@ header .fixtures {
   margin: auto 3vw;
   position: relative;
 }
+header .fixtures #menuico {
+  position: relative;
+  z-index: 4;
+}
 header .fixtures h1 {
   position: absolute;
   width: 100%;
