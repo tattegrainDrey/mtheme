@@ -16,6 +16,7 @@
             console.log("function has been played");
         }
 
+        var micon = document.getElementById('menuico');
         micon.addEventListener("click", hamburg);
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -34,10 +35,7 @@
             //add get_search_form to hamburger
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
-            theLast.insertAdjacentElement("afterend", peeka);
-
-            var micon = document.getElementById('menuico');
-            
+            theLast.insertAdjacentElement("afterend", peeka);            
         })
 
         window.addEventListener("resize", function() {
