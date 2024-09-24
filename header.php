@@ -73,7 +73,7 @@
             <?php
             if (has_custom_logo() && has_site_icon()) {
                 if ($width < 900) {
-                    echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
+                    echo "<a href=" . get_bloginfo('url') . "> <img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'> </a>";
                 } else {
                     the_custom_logo();
                 }
