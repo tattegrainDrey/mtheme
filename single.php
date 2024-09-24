@@ -3,6 +3,7 @@
     <?php
     if (have_posts()):
         echo "<section class='single'>";
+        echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         while (have_posts()):
             the_post();
             $tags = get_the_tags();

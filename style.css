@@ -75,6 +75,14 @@ h3 a:hover {
   color: #AB9487;
 }
 
+button.back {
+  background-color: #704214;
+  border-color: #AB9487;
+  color: #F9EADC;
+  border-radius: 5px;
+  font-size: medium;
+}
+
 header {
   height: 8vh;
   width: 100vw;

@@ -3,6 +3,7 @@
     <?php
     if (have_posts()):
         echo "<section id='section' class='category'>";
+        echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         while (have_posts()):
             the_post();
     ?>
