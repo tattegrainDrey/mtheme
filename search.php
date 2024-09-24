@@ -57,7 +57,7 @@
                             <h3><?php the_author() ?> </h3>
                         </div>
                         <div class="line2">
-                            <div class="entry-count">Occurrences: <?php echo $result['count']; ?></div>
+                            <div class="entry-count"><?php $search_query; ?> comes up <?php echo $result['count']; ?> times in this post.</div>
                         </div>
                     </div>
                     <h2><?php the_title(); ?></h2>
@@ -73,8 +73,8 @@
         }
         echo "</section>";
     else :
-        echo "<section id='section'>";
-            echo "<div> We haven't found anything pertaining to". __('', 'text-domain') .". Please try another query. </div>";
+        echo "<section id='section' class='nosearch'>";
+            echo "<div> We haven't found anything pertaining to". $search_query .". Please try another query. </div>";
             echo get_search_form();
         echo "<section>";
         echo "<script>console.log('You don't have any posts for index.php')</script>";
