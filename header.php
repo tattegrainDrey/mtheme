@@ -28,12 +28,6 @@
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);
-
-            function hamburg() {
-                var ham = document.getElementById('hamburger');
-
-                ham.style.display == "flex"? ham.style.display == "none" : ham.style.display == "flex"
-            }
         })
 
         window.addEventListener("resize", function() {
