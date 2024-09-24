@@ -31,13 +31,6 @@
     </div>
     <div class="minfoot">Copyright © 2024 Media Tone</div>
 </footer>
-<script>
-    function hamburg() {
-        var ham = document.getElementById('hamburger');
-
-        ham.style.display == "flex" ? ham.style.display == "none" : ham.style.display == "flex"
-    }
-</script>
 <?php wp_footer(); ?>
 </body>
 

@@ -10,15 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title><?php bloginfo('name') ?></title>
     <script>
+        function hamburg() {
+            var ham = document.getElementById('hamburger');
+            ham.style.display == "flex" ? ham.style.display == "none" : ham.style.display == "flex";
+        }
+
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
             var sect = document.getElementById('section').offsetHeight;
             var index = document.getElementById('main');
-            if ((sect/height) < 0.84) {
+            if ((sect / height) < 0.84) {
                 index.style.height = '84vh';
-            }
-            else {
+            } else {
                 index.style.height = '100%';
             }
             document.cookie = "width = " + width;
@@ -28,6 +32,10 @@
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);
+
+            var micon = document.getElementById('menuico');
+
+            micon.addEventListener("click", hamburg);
         })
 
         window.addEventListener("resize", function() {
@@ -35,10 +43,9 @@
             var height = window.innerHeight;
             var sect = document.getElementById('section').offsetHeight;
             var index = document.getElementById('main');
-            if ((sect/height) < 0.84) {
+            if ((sect / height) < 0.84) {
                 index.style.height = '84vh';
-            }
-            else {
+            } else {
                 index.style.height = '100%';
             }
             document.cookie = "width = " + width;
@@ -50,7 +57,7 @@
 
 <body>
     <?php
-    
+
     if (isset($_COOKIE['width'])) {
         $width = intval($_COOKIE['width']);
     }
@@ -60,31 +67,27 @@
     ?>
     <header>
         <div class="fixtures">
-            <img onclick="hamburg()" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
-            
+            <img id="menuico" onclick="hamburg()" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
+
             <?php
-                if (has_custom_logo() && has_site_icon()) {
-                    echo "<script> console.log('choice 1') </script>";
-                    if ($width < 900) {
-                        echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
-                        echo "<script> console.log('choice 1.1') </script>";
-                    }
-                    else {
-                        the_custom_logo();
-                        echo "<script> console.log('choice 1.2') </script>";
-                    }
-                }
-                elseif (!has_custom_logo() && has_site_icon()){
-                    echo "<script> console.log('choice 2') </script>";
+            if (has_custom_logo() && has_site_icon()) {
+                echo "<script> console.log('choice 1') </script>";
+                if ($width < 900) {
                     echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
-                }
-                elseif (!has_site_icon() && has_custom_logo()) {
-                    echo "<script> console.log('choice 3') </script>";
+                    echo "<script> console.log('choice 1.1') </script>";
+                } else {
                     the_custom_logo();
+                    echo "<script> console.log('choice 1.2') </script>";
                 }
-                else {
-                    echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";                  
-                }
+            } elseif (!has_custom_logo() && has_site_icon()) {
+                echo "<script> console.log('choice 2') </script>";
+                echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
+            } elseif (!has_site_icon() && has_custom_logo()) {
+                echo "<script> console.log('choice 3') </script>";
+                the_custom_logo();
+            } else {
+                echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";
+            }
             ?>
 
             <?php wp_nav_menu(array(
@@ -94,7 +97,7 @@
                 'container_class'      => 'bigScreen',
             ));
             get_search_form()
-            ?> 
+            ?>
 
         </div>
     </header>
