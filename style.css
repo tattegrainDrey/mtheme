@@ -248,6 +248,15 @@ section article a:hover img {
   width: 110%;
 }
 
+section.nosearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  row-gap: 6vh;
+}
+
 section article .metainfo {
   font-size: small;
   display: flex;
