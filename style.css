@@ -71,6 +71,7 @@ body main section article img {
 }
 body main section article a > p {
   text-align: justify;
+  color: #131413;
 }
 body .logo {
   height: 80px;

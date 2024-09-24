@@ -2,7 +2,7 @@
 <main>
     <?php
     if (have_posts()):
-        echo "<section class='index'>";
+        echo "<section class='single'>";
         while (have_posts()):
             the_post();
             $tags = get_the_tags();
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <h2><?php the_title(); ?></h2>
-                <?php the_excerpt(); ?>
+                <?php the_content(); ?>
             </article>
     <?php
         endwhile;
