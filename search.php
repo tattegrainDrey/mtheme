@@ -73,7 +73,7 @@
         }
         echo "</section>";
     else :
-        echo "<section>";
+        echo "<section id='section'>";
             echo "<div> We haven't found anything pertaining to". __('', 'text-domain') .". Please try another query. </div>";
             echo get_search_form();
         echo "<section>";
