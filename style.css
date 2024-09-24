@@ -281,4 +281,8 @@ section article p {
 }
 section article p:has(a) a {
   display: unset;
+}
+
+section.tag h1 {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
