@@ -10,15 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title><?php bloginfo('name') ?></title>
     <script>
-        function hamburg() {
-            var ham = document.getElementById('hamburger');
-            ham.style.display == "flex" ? ham.style.display == "none" : ham.style.display == "flex";
-            console.log("function has been played");
-        }
-
-        var micon = document.getElementById('menuico');
-        micon.addEventListener("click", hamburg);
-
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
@@ -35,7 +26,15 @@
             //add get_search_form to hamburger
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
-            theLast.insertAdjacentElement("afterend", peeka);            
+            theLast.insertAdjacentElement("afterend", peeka);  
+            
+            
+        var micon = document.getElementById('menuico');
+        micon.addEventListener("click", ()=>{
+            var ham = document.getElementById('hamburger');
+            ham.style.display == "flex" ? ham.style.display == "none" : ham.style.display == "flex";
+            console.log("function has been played");
+        });
         })
 
         window.addEventListener("resize", function() {
