@@ -14,11 +14,11 @@
             var width = window.innerWidth;
             var height = window.innerHeight;
             var sect = document.getElementById('section').offsetHeight;
-            var index = document.getElementById('main');
+            var main = document.getElementById('main');
             if ((sect / height) < 0.84) {
-                index.style.height = '84vh';
+                main.style.height = '84vh';
             } else {
-                index.style.height = '100%';
+                main.style.height = '100%';
             }
             document.cookie = "width = " + width;
             document.cookie = "height = " + height;
@@ -70,7 +70,7 @@
                     the_custom_logo();
                 }
             } elseif (!has_custom_logo() && has_site_icon()) {
-                echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
+                echo "<a href=" . get_bloginfo('url') . "> <img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'> </a>";
             } elseif (!has_site_icon() && has_custom_logo()) {
                 the_custom_logo();
             } else {
