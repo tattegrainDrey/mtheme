@@ -27,8 +27,6 @@
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);  
-
-            
         })
 
         window.addEventListener("resize", function() {
@@ -43,6 +41,10 @@
             }
             document.cookie = "width = " + width;
             document.cookie = "height = " + height;
+
+            var theLast = document.getElementById('hamburger').lastElementChild;
+            var peeka = document.getElementById('search');
+            theLast.insertAdjacentElement("afterend", peeka);  
         })
     </script>
 
