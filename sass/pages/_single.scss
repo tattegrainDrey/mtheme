@@ -30,6 +30,10 @@ section {
             height: auto;
         }
 
+        figcaption {
+            font-style: italic;
+        }
+
         p {
             text-align: justify;
             color: $black;

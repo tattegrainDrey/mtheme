@@ -245,6 +245,9 @@ section article img {
   width: 100%;
   height: auto;
 }
+section article figcaption {
+  font-style: italic;
+}
 section article p {
   text-align: justify;
   color: #131413;

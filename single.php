@@ -27,6 +27,7 @@
                 <h2><?php the_title(); ?></h2>
                 <?php the_content(); ?>
             </article>
+            <?php comments_template() ?> 
     <?php
         endwhile;
         echo "</section>";
