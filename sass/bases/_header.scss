@@ -30,9 +30,13 @@ header {
             position: absolute;
             left: 0;
         }
+        a:has(img.logo) {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
         .logo, .ico {
             margin: auto calc(100%/2 - 40px);
-            position: absolute;
             left: 0;
         }
 

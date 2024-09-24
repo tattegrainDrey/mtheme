@@ -144,9 +144,13 @@ header .fixtures .custom-logo-link {
   position: absolute;
   left: 0;
 }
+header .fixtures a:has(img.logo) {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 header .fixtures .logo, header .fixtures .ico {
   margin: auto calc(50% - 40px);
-  position: absolute;
   left: 0;
 }
 header .fixtures ul {
