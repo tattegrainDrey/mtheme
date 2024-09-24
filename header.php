@@ -16,6 +16,8 @@
             console.log("function has been played");
         }
 
+        micon.addEventListener("click", hamburg);
+
         document.addEventListener("DOMContentLoaded", () => {
             var width = window.innerWidth;
             var height = window.innerHeight;
@@ -35,9 +37,6 @@
             theLast.insertAdjacentElement("afterend", peeka);
 
             var micon = document.getElementById('menuico');
-
-            micon.addEventListener("click", hamburg);
-            console.log("micon has been clicked");
             
         })
 
