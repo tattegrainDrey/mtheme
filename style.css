@@ -52,26 +52,39 @@ body main a:hover {
 body main section article {
   padding: 2vh 0;
 }
-body main section article .metainfo {
-  font-size: small;
+body main section article a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
 }
-body main section article .metainfo .line1 {
+body main section article a .metainfo {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+body main section article a .metainfo .line1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-body main section article h2 {
+body main section article a h2 {
   text-align: center;
   margin: 1vh 0;
 }
-body main section article img {
+body main section article a img {
   width: 100%;
   height: auto;
 }
-body main section article a > p {
+body main section article a p {
   text-align: justify;
   color: #131413;
+}
+body main section article a:hover img {
+  width: 110%;
 }
 body .logo {
   height: 80px;
