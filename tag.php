@@ -5,7 +5,7 @@
         echo "<section id='section' class='index'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         ?> 
-        <h1><?php single_tag_title( __( 'Currently browsing ', 'textdomain' ) ); ?> </h1>
+        <h1><?php single_tag_title( __( 'textdomain', ' tags' ) ); ?> </h1>
         <?php 
         while (have_posts()):
             the_post();
