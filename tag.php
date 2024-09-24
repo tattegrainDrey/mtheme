@@ -4,7 +4,7 @@
     if (have_posts()):
         echo "<section id='section' class='index'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
-        echo '<h1>'. the_tags() .'</h1>';
+        echo '<h1>'. the_title() .'</h1>';
         while (have_posts()):
             the_post();
     ?>
