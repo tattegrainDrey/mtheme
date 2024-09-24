@@ -66,7 +66,7 @@
     ?>
     <header>
         <div class="fixtures">
-            <img onclick="hamburger()" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
+            <img onclick="hamburg()" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
             
             <?php
                 if (has_custom_logo() && has_site_icon()) {
