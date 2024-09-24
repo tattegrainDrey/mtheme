@@ -64,19 +64,14 @@
 
             <?php
             if (has_custom_logo() && has_site_icon()) {
-                echo "<script> console.log('choice 1') </script>";
                 if ($width < 900) {
                     echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
-                    echo "<script> console.log('choice 1.1') </script>";
                 } else {
                     the_custom_logo();
-                    echo "<script> console.log('choice 1.2') </script>";
                 }
             } elseif (!has_custom_logo() && has_site_icon()) {
-                echo "<script> console.log('choice 2') </script>";
                 echo "<img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'>";
             } elseif (!has_site_icon() && has_custom_logo()) {
-                echo "<script> console.log('choice 3') </script>";
                 the_custom_logo();
             } else {
                 echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";
