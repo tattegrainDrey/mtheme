@@ -60,7 +60,7 @@
                                 <div class="entry-count">
                                     "<span class="result">
                                         <?php the_search_query(); ?>
-                                    </span>" comes up <?php echo $result['count']; ?>
+                                    </span>" comes up
                                     <?php printf(_nx('1 time', '%1$s times', $result['count'], 'search occurence', 'text-domain'), number_format_i18n($result['count'])) ?>
                                     in this post.
                                 </div>
