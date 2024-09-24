@@ -2,7 +2,8 @@
 <main id="main">
     <?php
     if ( have_posts() ) :
-
+        echo "<section id='section' class='index'>";
+        echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         // Capture the search query
         $search_query = get_search_query();
     
@@ -70,8 +71,10 @@
         } else {
             echo '<p>' . __( 'No results found.', 'text-domain' ) . '</p>';
         }
+        echo "</section>";
     else :
-        echo '<p>' . __( 'Please enter a search term.', 'text-domain' ) . '</p>';
+        echo "You don't have any posts for index.php";
+        echo "<script>console.log('You don't have any posts for index.php')</script>";
     endif; ?>
 </main>
 <?php get_footer(); ?>
