@@ -24,15 +24,15 @@
             document.cookie = "height = " + height;
 
             //add get_search_form to hamburger
-            // var theLast = document.getElementById('hamburger').lastElementChild;
-            // var peeka = document.getElementById('search');
-            // theLast.insertAdjacentElement("afterend", peeka);  
-        })
-
-        window.addEventListener("load", () => {
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);  
+        })
+
+        window.addEventListener("load", () => {
+            // var theLast = document.getElementById('hamburger').lastElementChild;
+            // var peeka = document.getElementById('search');
+            // theLast.insertAdjacentElement("afterend", peeka);  
         })
 
         window.addEventListener("resize", () => {
