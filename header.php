@@ -60,7 +60,7 @@
     ?>
     <header>
         <div class="fixtures">
-            <img id="menuico" onclick="bourgeois" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
+            <img id="menuico" src="<?php echo esc_url(get_template_directory_uri() . '/icons/menu.svg'); ?>" alt="menu ico">
 
             <?php
             if (has_custom_logo() && has_site_icon()) {
