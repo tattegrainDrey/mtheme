@@ -3,6 +3,10 @@
         padding: 0;
         list-style-type: none;
 
+        li.comment {
+            margin: 2vh auto;
+
+            
         .comment-body {
             display: grid;
             grid-template-columns: auto auto;
@@ -15,6 +19,7 @@
                 order: -1;
             }
 
+        }
         }
     }
 }

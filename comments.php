@@ -11,7 +11,7 @@
         <h2 class="comments-title">
             <?php
             $comments_number = get_comments_number();
-            printf( _nx( 'One Comment', '%1$s Comments', $comments_number, 'comments title', 'text-domain' ), number_format_i18n( $comments_number ) );
+            printf( _nx( '1 Comment', '%1$s Comments', $comments_number, 'comments title', 'text-domain' ), number_format_i18n( $comments_number ) );
             ?>
         </h2>
 
