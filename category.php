@@ -7,7 +7,7 @@
             the_post();
     ?>
             <article>
-                <a href="<?php esc_url(get_permalink()) ?> ">
+                <a href="<?php get_permalink() ?> ">
                     <div class="metainfo">
                         <div class="line1">
                             <h3><?php the_time('j F Y') ?></h3>

@@ -7,16 +7,16 @@
             the_post();
     ?>
             <article>
-                <a href="<?php esc_url(get_permalink()) ?> ">
-                <div class="metainfo">
-                    <div class="line1">
-                        <h3><?php the_time('j F Y') ?></h3>
-                        <h3><?php the_author() ?> </h3>
+                <a href="<?php get_permalink() ?> ">
+                    <div class="metainfo">
+                        <div class="line1">
+                            <h3><?php the_time('j F Y') ?></h3>
+                            <h3><?php the_author() ?> </h3>
+                        </div>
                     </div>
-                </div>
-                <h2><?php the_title(); ?></h2>
-                <?php the_post_thumbnail(); ?> 
-                <?php the_excerpt(); ?>
+                    <h2><?php the_title(); ?></h2>
+                    <?php the_post_thumbnail(); ?>
+                    <?php the_excerpt(); ?>
                 </a>
             </article>
     <?php
