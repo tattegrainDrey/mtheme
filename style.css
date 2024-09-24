@@ -49,6 +49,29 @@ body main a {
 body main a:hover {
   color: #704214;
 }
+body main section article {
+  padding: 2vh 0;
+}
+body main section article .metainfo {
+  font-size: small;
+}
+body main section article .metainfo .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+body main section article h2 {
+  text-align: center;
+  margin: 1vh 0;
+}
+body main section article img {
+  width: 100%;
+  height: auto;
+}
+body main section article a > p {
+  text-align: justify;
+}
 body .logo {
   height: 80px;
   width: auto;
@@ -176,28 +199,4 @@ footer .minfoot {
   justify-content: center;
 }
 
-/************************* pages */
-section.category img {
-  width: 100%;
-  height: auto;
-}
-
-section.index article {
-  padding: 2vh 0;
-}
-section.index article .metainfo {
-  font-size: small;
-}
-section.index article .metainfo .line1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-section.index article h2 {
-  text-align: center;
-  margin: 1vh 0;
-}
-section.index article > p {
-  text-align: justify;
-}/*# sourceMappingURL=style.css.map */
+/************************* pages *//*# sourceMappingURL=style.css.map */
