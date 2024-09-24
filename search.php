@@ -57,7 +57,7 @@
                             <h3><?php the_author() ?> </h3>
                         </div>
                         <div class="line2">
-                            <div class="entry-count">"<span class="result"><?php esc_html(get_search_query()); ?></span>" comes up <?php echo $result['count']; ?> times in this post.</div>
+                            <div class="entry-count">"<span class="result"><?php the_search_query(); ?></span>" comes up <?php echo $result['count']; ?> times in this post.</div>
                         </div>
                     </div>
                     <h2><?php the_title(); ?></h2>
