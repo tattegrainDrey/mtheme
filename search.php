@@ -58,6 +58,7 @@
                         </div>
                         <div class="line2">
                             <div class="entry-count">"<span class="result"><?php the_search_query(); ?></span>" comes up <?php echo $result['count']; ?> times in this post.</div>
+                            <?php printf( _nx( '1 time', '%1$s times', $result['count'], 'search occurence', 'text-domain' ), number_format_i18n( $result['count'] ) ) ?> 
                         </div>
                     </div>
                     <h2><?php the_title(); ?></h2>
