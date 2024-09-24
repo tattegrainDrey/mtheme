@@ -177,6 +177,11 @@ footer .minfoot {
 }
 
 /************************* pages */
+section.category img {
+  width: 100%;
+  height: auto;
+}
+
 section.index article {
   padding: 2vh 0;
 }
