@@ -23,9 +23,6 @@
     <?php
         endwhile;
         echo "</section>";
-    else:
-        echo "You don't have any posts for index.php";
-        echo "<script>console.log('You don't have any posts for index.php')</script>";
     endif; ?>
 </main>
 <?php get_footer(); ?>
