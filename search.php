@@ -73,7 +73,10 @@
         }
         echo "</section>";
     else :
-        echo "You don't have any posts for index.php";
+        echo "<section>";
+            echo "<div> We haven't found anything pertaining to". __('', 'text-domain') .". Please try another query. </div>";
+            echo get_search_form();
+        echo "<section>";
         echo "<script>console.log('You don't have any posts for index.php')</script>";
     endif; ?>
 </main>

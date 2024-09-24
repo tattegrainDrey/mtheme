@@ -111,7 +111,7 @@ header .fixtures h1 {
   text-align: center;
 }
 header .fixtures .custom-logo-link {
-  margin: auto calc(50% - 75px);
+  margin: auto calc(50% - 75px) auto calc(50% - 125px);
   position: absolute;
   left: 0;
 }
@@ -121,8 +121,9 @@ header .fixtures a:has(img.logo) {
   position: absolute;
 }
 header .fixtures .logo, header .fixtures .ico {
-  margin: auto calc(50% - 40px);
-  left: 0;
+  margin: auto calc(50% - 40px) auto calc(50% - 90px);
+  right: 0;
+  position: absolute;
 }
 header .fixtures ul {
   position: fixed;

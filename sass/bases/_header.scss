@@ -26,7 +26,7 @@ header {
             text-align: center;
         }
         .custom-logo-link {
-            margin: auto calc(100%/2 - 75px);
+            margin: auto calc(100%/2 - 75px) auto calc(100%/2 - 125px);
             position: absolute;
             left: 0;
         }
@@ -36,8 +36,9 @@ header {
             position: absolute;
         }
         .logo, .ico {
-            margin: auto calc(100%/2 - 40px);
-            left: 0;
+            margin: auto calc(50% - 40px) auto calc(50% - 90px);
+            right: 0;
+            position: absolute;
         }
 
         ul {
