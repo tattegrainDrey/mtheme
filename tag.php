@@ -2,7 +2,7 @@
 <main id="main">
     <?php
     if (have_posts()):
-        echo "<section id='section' class='index'>";
+        echo "<section id='section' class='tag'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         ?> 
         <h1><?php single_tag_title('Tag: ', true); ?></h1>
