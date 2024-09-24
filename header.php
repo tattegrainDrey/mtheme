@@ -13,6 +13,7 @@
         function hamburg() {
             var ham = document.getElementById('hamburger');
             ham.style.display == "flex" ? ham.style.display == "none" : ham.style.display == "flex";
+            console.log("function has been played");
         }
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -36,6 +37,8 @@
             var micon = document.getElementById('menuico');
 
             micon.addEventListener("click", hamburg);
+            console.log("micon has been clicked");
+            
         })
 
         window.addEventListener("resize", function() {
