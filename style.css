@@ -181,6 +181,22 @@ footer .minfoot {
 }
 
 /************************* pages */
+.comments-container ol {
+  padding: 0;
+  list-style-type: none;
+}
+.comments-container ol .comment-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+.comments-container ol .comment-body .comment-author, .comments-container ol .comment-body p, .comments-container ol .comment-body .comment-meta {
+  grid-column: 1/3;
+}
+.comments-container ol .comment-body .comment-meta {
+  order: -1;
+}
+
 section article {
   padding: 2vh 0;
 }
