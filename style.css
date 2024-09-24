@@ -256,6 +256,10 @@ section.nosearch {
   justify-content: center;
   row-gap: 6vh;
 }
+section.nosearch span.result {
+  font-weight: 600;
+  text-decoration: underline solid black;
+}
 
 section article .metainfo {
   font-size: small;
