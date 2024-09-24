@@ -237,6 +237,10 @@ section article h2 {
   text-align: center;
   margin: 1vh 0;
 }
+section article h2:not(:first-of-type) {
+  text-align: left;
+  margin: 2vh 0;
+}
 section article img {
   width: 100%;
   height: auto;
@@ -244,4 +248,7 @@ section article img {
 section article p {
   text-align: justify;
   color: #131413;
+}
+section article p:has(a) a {
+  display: unset;
 }/*# sourceMappingURL=style.css.map */
