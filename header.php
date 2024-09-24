@@ -27,14 +27,6 @@
             var theLast = document.getElementById('hamburger').lastElementChild;
             var peeka = document.getElementById('search');
             theLast.insertAdjacentElement("afterend", peeka);  
-            
-            
-        var micon = document.getElementById('menuico');
-        micon.addEventListener("click", ()=>{
-            var ham = document.getElementById('hamburger');
-            ham.style.display == "flex" ? ham.style.display = "none" : ham.style.display = "flex";
-            console.log("function has been played");
-        });
         })
 
         window.addEventListener("resize", function() {
