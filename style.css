@@ -210,6 +210,15 @@ footer .minfoot {
   order: -1;
 }
 
+section.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  row-gap: 6vh;
+}
+
 section article {
   padding: 2vh 0;
 }
