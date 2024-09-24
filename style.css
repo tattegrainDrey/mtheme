@@ -49,43 +49,6 @@ body main a {
 body main a:hover {
   color: #704214;
 }
-body main section article {
-  padding: 2vh 0;
-}
-body main section article a {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  transition: all 0.5s;
-}
-body main section article a .metainfo {
-  font-size: small;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-body main section article a .metainfo .line1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-body main section article a h2 {
-  text-align: center;
-  margin: 1vh 0;
-}
-body main section article a img {
-  width: 100%;
-  height: auto;
-}
-body main section article a p {
-  text-align: justify;
-  color: #131413;
-}
-body main section article a:hover img {
-  width: 110%;
-}
 body .logo {
   height: 80px;
   width: auto;
@@ -217,4 +180,67 @@ footer .minfoot {
   justify-content: center;
 }
 
-/************************* pages *//*# sourceMappingURL=style.css.map */
+/************************* pages */
+section article {
+  padding: 2vh 0;
+}
+section article a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+section article a .metainfo {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+section article a .metainfo .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+section article a h2 {
+  text-align: center;
+  margin: 1vh 0;
+}
+section article a img {
+  width: 100%;
+  height: auto;
+}
+section article a p {
+  text-align: justify;
+  color: #131413;
+}
+section article a:hover img {
+  width: 110%;
+}
+
+section article .metainfo {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+section article .metainfo .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+section article h2 {
+  text-align: center;
+  margin: 1vh 0;
+}
+section article img {
+  width: 100%;
+  height: auto;
+}
+section article p {
+  text-align: justify;
+  color: #131413;
+}/*# sourceMappingURL=style.css.map */
