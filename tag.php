@@ -4,10 +4,12 @@
     if (have_posts()):
         echo "<section id='section' class='index'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
-        echo '<h1>'. single_tag_title() .'</h1>';
+        ?> 
+        <h1><?php single_tag_title( __( 'Currently browsing ', 'textdomain' ) ); ?> </h1>
+        <?php 
         while (have_posts()):
             the_post();
-    ?>
+    ?>   
             <article>
                 <a href="<?php the_permalink() ?> ">
                     <div class="metainfo">
