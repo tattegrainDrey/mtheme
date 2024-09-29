@@ -192,6 +192,10 @@ footer .minfoot {
 }
 
 /************************* pages */
+section.category h2 {
+  font-size: larger;
+}
+
 .comments-container ol {
   padding: 0;
   list-style-type: none;
@@ -318,6 +322,9 @@ section article p:has(a) a {
 section.tag h1 {
   text-align: center;
   color: #131413;
+}
+section.tag h2 {
+  font-size: larger;
 }
 
 /************************* adaptability */
