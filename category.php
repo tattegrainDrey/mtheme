@@ -30,7 +30,9 @@
             // Insert the 'past' post every 3 posts
 
             if ($post_count % 3 == 0) {
+                echo '<article class="wpads">';
                 echo apply_filters('the_content', $ad_post->post_content);
+                echo '<article>';
             }
         endwhile;
         echo "</section>";
