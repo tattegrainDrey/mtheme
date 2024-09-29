@@ -32,7 +32,7 @@
             if ($post_count % 3 == 0) {
                 echo '<article class="wpads">';
                 echo apply_filters('the_content', $ad_post->post_content);
-                echo '<article>';
+                echo '</article>';
             }
         endwhile;
         echo "</section>";
