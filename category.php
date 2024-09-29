@@ -5,7 +5,7 @@
         echo "<section id='section' class='category'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         $post_count = 0;
-        $ad_post = get_post();
+        $ad_post = get_post(230);
 
         while (have_posts()):
             the_post();
