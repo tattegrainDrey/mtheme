@@ -224,7 +224,6 @@ section article a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  transition: all 0.5s;
 }
 section article a .metainfo {
   font-size: small;
@@ -246,6 +245,7 @@ section article a h2 {
 section article a img {
   width: 100%;
   height: auto;
+  transition: all 0.5s;
 }
 section article a p {
   text-align: justify;
@@ -349,5 +349,9 @@ section.tag h1 {
   }
   body header .fixtures ul a {
     color: #F9EADC;
+  }
+  body button.back {
+    width: 12vw;
+    height: 4vw;
   }
 }/*# sourceMappingURL=style.css.map */
