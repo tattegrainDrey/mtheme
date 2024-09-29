@@ -70,8 +70,12 @@
                     top: 0;
                 }
 
+                article.article {
+                    grid-column: auto / auto;
+                }
+
                 article.wpads {
-                    grid-column: 1/4;
+                    grid-column: 1 / -1;
                 }
             }
             section.tag  article {

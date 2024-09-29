@@ -376,8 +376,11 @@ section.tag h1 {
     position: absolute;
     top: 0;
   }
+  body main section.category article.article, body main section.tag article.article {
+    grid-column: auto/auto;
+  }
   body main section.category article.wpads, body main section.tag article.wpads {
-    grid-column: 1/4;
+    grid-column: 1/-1;
   }
   body main section.tag article {
     padding: 8vh 0;
