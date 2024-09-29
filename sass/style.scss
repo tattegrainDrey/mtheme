@@ -15,7 +15,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 */
 
 /************************* bases */
-@import "bases/adaptability";
 @import "bases/bases";
 @import "bases/header";
 @import "bases/footer";
@@ -29,3 +28,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 @import "templates/searchform";
 @import "templates/single";
 @import "templates/tag";
+
+/************************* adaptability */
+@import "bases/adaptability";

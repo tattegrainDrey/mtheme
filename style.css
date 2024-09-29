@@ -313,4 +313,37 @@ section article p:has(a) a {
 section.tag h1 {
   text-align: center;
   color: #131413;
+}
+
+/************************* adaptability */
+@media screen and (min-width: 901px) {
+  body {
+    overflow-x: hidden;
+  }
+  body header {
+    height: 10vh;
+  }
+  body header .fixtures #menuico {
+    display: none;
+  }
+  body header .fixtures ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    left: unset;
+    width: auto;
+    height: 100%;
+    gap: 1rem;
+    background-color: unset;
+    box-shadow: unset;
+  }
+  body header .fixtures ul li:nth-of-type(1) {
+    display: none;
+  }
+  body header .fixtures ul a {
+    color: #F9EADC;
+  }
 }/*# sourceMappingURL=style.css.map */
