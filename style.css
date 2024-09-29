@@ -363,7 +363,7 @@ section.tag h1 {
 @media screen and (min-width: 901px) and (max-height: 700px) {
   body main section.category, body main section.tag {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     gap: 3vw;
     position: relative;
   }
@@ -375,9 +375,6 @@ section.tag h1 {
   body main section.category button, body main section.tag button {
     position: absolute;
     top: 0;
-  }
-  body main section.category article.article, body main section.tag article.article {
-    grid-column: auto;
   }
   body main section.category article.wpads, body main section.tag article.wpads {
     grid-column: 1/4;
