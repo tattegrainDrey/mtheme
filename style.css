@@ -354,4 +354,16 @@ section.tag h1 {
     width: 12vw;
     height: 4vw;
   }
+}
+@media screen and (min-width: 901px) and (max-height: 700px) {
+  body main section.category {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3vw;
+    position: relative;
+  }
+  body main section.category button {
+    position: absolute;
+    top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -49,3 +49,21 @@
         }
     }
 }
+
+@media screen and (min-width: 901px) and (max-height: 700px) {
+    body {
+        main {
+            section.category {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 3vw;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
