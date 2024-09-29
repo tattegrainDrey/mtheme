@@ -51,6 +51,9 @@ html {
 body {
     margin: 0 !important;
     background-color: $color1;
+    @media screen and (min-width : 820px) {
+        overflow-x: hidden;
+    }
 
     main {
         margin: 12vh 7vw 4vh;
@@ -104,7 +107,7 @@ h3 {
     }
 }
 
-button {
+button.back {
     background-color: #704214;
     border-color: #AB9487;
     color: #F9EADC;
