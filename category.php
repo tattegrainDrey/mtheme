@@ -5,6 +5,7 @@
         echo "<section id='section' class='category'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         $post_count = 0;
+        $ad_post = get_post();
 
         while (have_posts()):
             the_post();
@@ -29,7 +30,7 @@
             // Insert the 'past' post every 3 posts
 
             if ($post_count % 3 == 0) {
-
+                echo apply_filters('the_content', $ad_post->post_content);
             }
         endwhile;
         echo "</section>";
