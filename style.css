@@ -88,7 +88,7 @@ form#searchform {
   display: flex;
 }
 
-li:has(.trp-ls-language-name) {
+li span:has(.trp-ls-language-name) {
   display: flex;
   align-items: center;
 }
