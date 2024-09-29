@@ -5,7 +5,14 @@
         echo "<section id='section' class='category'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         $post_count = 0;        
-        $post_data = get_page_by_path('ad');
+        $ad_query = new WP_Query(array(
+            'name' => 'past', // Slug of the post
+            'post_type' => 'post', // Ensure we're querying posts
+            'posts_per_page' => 1 // We only need one post
+        ));
+
+        // Store the 'past' post if it exists
+        $post_data = $ad_query->have_posts() ? $ad_query->posts[0] : null;
         while (have_posts()):
             the_post();
             $post_count++;
