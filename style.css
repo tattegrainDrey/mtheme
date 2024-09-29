@@ -88,6 +88,11 @@ form#searchform {
   display: flex;
 }
 
+li:has(.trp-ls-language-name) {
+  display: flex;
+  align-items: center;
+}
+
 header {
   height: 8vh;
   width: 100vw;
