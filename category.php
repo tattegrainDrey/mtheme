@@ -4,7 +4,8 @@
     if (have_posts()):
         echo "<section id='section' class='category'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
-        $post_count = 0;
+        $post_count = 0;        
+        $post_data = get_page_by_path('ad');
         while (have_posts()):
             the_post();
             $post_count++;
@@ -28,7 +29,6 @@
             // Insert the 'past' post every 3 posts
 
             if ($post_count % 3 == 0) {
-                $post_data = get_page_by_path('ad');
 
                 if ($post_data) {
                     setup_postdata($post_data);
