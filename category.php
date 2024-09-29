@@ -5,16 +5,6 @@
         echo "<section id='section' class='category'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         $post_count = 0;
-        $post_data = null;  
-        $ad_query = new WP_Query(array(
-            'name' => 'ad', // Slug of the post
-            'post_type' => 'post', // Ensure we're querying posts
-            'posts_per_page' => 1 // We only need one post
-        ));
-
-        if ($ad_query->have_posts()){
-            $post_data = $ad_query->posts[0];
-        }
 
         while (have_posts()):
             the_post();
@@ -40,21 +30,6 @@
 
             if ($post_count % 3 == 0) {
 
-                if ($post_data) {
-                    setup_postdata($post_data);
-
-
-            ?>
-
-                    <article class="wpads">
-                        <?php echo get_the_excerpt(get_page_by_path($post_data)); ?>
-                    </article>
-
-    <?php
-                    wp_reset_postdata();
-                } else {
-                    echo '<p>Nothing there</p>';
-                }
             }
         endwhile;
         echo "</section>";
