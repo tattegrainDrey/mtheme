@@ -363,6 +363,8 @@ section.tag h1 {
 @media screen and (min-width: 901px) and (max-height: 700px) {
   body main section.category, body main section.tag {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
   }
   body main section.category h1, body main section.tag h1 {
     position: absolute;
@@ -372,6 +374,12 @@ section.tag h1 {
   body main section.category button, body main section.tag button {
     position: absolute;
     top: 0;
+  }
+  body main section.category article.article, body main section.tag article.article {
+    width: 33.33%;
+  }
+  body main section.category article.wpads, body main section.tag article.wpads {
+    width: 100%;
   }
   body main section.tag article {
     padding: 8vh 0;

@@ -55,6 +55,9 @@
         main {
             section.category, section.tag {
                 position: relative;
+                display: flex;
+                flex-wrap: wrap;
+
                 h1 {
                     position: absolute;
                     width: 100%;
@@ -64,6 +67,15 @@
                 button {
                     position: absolute;
                     top: 0;
+                }
+
+                article {
+                    &.article {
+                        width: 33.33%;
+                    }
+                    &.wpads {
+                        width: 100%;
+                    }
                 }
 
             }
