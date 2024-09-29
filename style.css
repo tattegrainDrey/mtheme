@@ -170,6 +170,26 @@ header .fixtures ul a:hover {
   header #menuico {
     display: none;
   }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    left: unset;
+    width: auto;
+    height: 100%;
+    gap: 1rem;
+    background-color: unset;
+    box-shadow: unset;
+  }
+  header ul li:nth-of-type(1) {
+    display: none;
+  }
+  header ul a {
+    color: #F9EADC;
+  }
 }
 
 footer {
@@ -288,6 +308,7 @@ section.nosearch span.result {
 
 #searchform button {
   background-color: #F9EADC;
+  border-color: #F9EADC;
 }
 
 section article .metainfo {

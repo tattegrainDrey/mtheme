@@ -75,5 +75,29 @@ header {
         #menuico {
             display: none;
         }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            height: auto;
+            top: 0;
+            right: 0;
+            left: unset;
+            width: auto;
+            height: 100%;
+            gap: 1rem;
+            background-color: unset;
+            box-shadow: unset;
+
+            li:nth-of-type(1) {
+                display: none;
+            }
+
+             a {
+                color: $color1;
+             }
+        }
+
     }
 }
