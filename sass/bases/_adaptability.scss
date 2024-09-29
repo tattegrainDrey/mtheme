@@ -70,6 +70,10 @@
                     top: 0;
                 }
 
+                article.article {
+                    grid-column: auto;
+                }
+
                 article.wpads {
                     grid-column: 1/4;
                 }

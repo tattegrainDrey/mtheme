@@ -11,7 +11,7 @@
             the_post();
             $post_count++;
     ?>
-            <article>
+            <article class="article">
                 <a href="<?php the_permalink() ?> ">
                     <div class="metainfo">
                         <div class="line1">
