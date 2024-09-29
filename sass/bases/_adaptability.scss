@@ -69,6 +69,10 @@
                     position: absolute;
                     top: 0;
                 }
+
+                article.wpads {
+                    grid-column: 1/4;
+                }
             }
             section.tag  article {
                 padding: 8vh 0;

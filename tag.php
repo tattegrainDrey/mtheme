@@ -4,12 +4,14 @@
     if (have_posts()):
         echo "<section id='section' class='tag'>";
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
-        ?> 
+        $post_count = 0;
+    ?>
         <h1><?php single_tag_title('Tag: ', true); ?></h1>
-        <?php 
+        <?php
         while (have_posts()):
             the_post();
-    ?>   
+            $post_count++;
+        ?>
             <article>
                 <a href="<?php the_permalink() ?> ">
                     <div class="metainfo">
@@ -23,7 +25,35 @@
                     <?php the_excerpt(); ?>
                 </a>
             </article>
+            <?php
+
+
+
+            // Insert the 'past' post every 3 posts
+
+
+
+            if ($post_count % 3 == 0) {
+
+
+
+            ?>
+
+
+
+                <article class="wpads">
+
+                    <?php echo get_the_excerpt(get_page_by_path('ad')); ?>
+
+                </article>
+
+
+
     <?php
+
+
+
+            }
         endwhile;
         echo "</section>";
     else:
