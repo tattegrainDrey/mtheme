@@ -30,18 +30,19 @@
             if ($post_count % 3 == 0) {
                 $post_data = get_page_by_path('ad');
 
-                if ($post_data){
+                if ($post_data) {
                     setup_postdata($post_data);
-                }
+
 
             ?>
 
-                <article class="wpads">
-                    <?php echo get_the_excerpt(get_page_by_path($post_data)); ?>
-                </article>
+                    <article class="wpads">
+                        <?php echo get_the_excerpt(get_page_by_path($post_data)); ?>
+                    </article>
 
     <?php
-
+                    wp_reset_postdata();
+                }
             }
         endwhile;
         echo "</section>";
