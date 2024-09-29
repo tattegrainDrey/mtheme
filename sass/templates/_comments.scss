@@ -6,20 +6,22 @@
         li.comment {
             margin: 2vh auto;
 
-            
-        .comment-body {
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto auto;
+            .comment-body {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto auto;
 
-            .comment-author, p , .comment-meta {
-                grid-column: 1/3;
-            }
-            .comment-meta {
-                order: -1;
-            }
+                .comment-author,
+                p,
+                .comment-meta {
+                    grid-column: 1/3;
+                }
 
-        }
+                .comment-meta {
+                    order: -1;
+                }
+            }
         }
     }
+    
 }

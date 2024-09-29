@@ -28,6 +28,14 @@ $black : #131413;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+@mixin basic-button {
+    background-color: #704214;
+    border-color: #AB9487;
+    color: #F9EADC;
+    border-radius: 5px;
+    font-size: medium;
+}
+
 #wpadminbar {
     display: none; //avoid showing tech bar while editing theme
 }
@@ -52,6 +60,7 @@ body {
         h2,
         h3 {
             color: $color2;
+            padding-top: 2rem;
         }
 
         h3 {
@@ -95,7 +104,7 @@ h3 {
     }
 }
 
-button.back {
+button {
     background-color: #704214;
     border-color: #AB9487;
     color: #F9EADC;
