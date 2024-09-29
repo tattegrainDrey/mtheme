@@ -42,6 +42,8 @@
 
     <?php
                     wp_reset_postdata();
+                } else {
+                    echo '<p>Nothing there</p>';
                 }
             }
         endwhile;
