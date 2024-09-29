@@ -362,8 +362,16 @@ section.tag h1 {
     gap: 3vw;
     position: relative;
   }
+  body main section.category h1, body main section.tag h1 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
   body main section.category button, body main section.tag button {
     position: absolute;
     top: 0;
+  }
+  body main section.tag article {
+    padding: 8vh 0;
   }
 }/*# sourceMappingURL=style.css.map */
