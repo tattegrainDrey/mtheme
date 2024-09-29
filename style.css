@@ -351,18 +351,18 @@ section.tag h1 {
     color: #F9EADC;
   }
   body button.back {
-    width: 12vw;
-    height: 4vw;
+    width: 9vw;
+    height: 3vw;
   }
 }
 @media screen and (min-width: 901px) and (max-height: 700px) {
-  body main section.category {
+  body main section.category, body main section.tag {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3vw;
     position: relative;
   }
-  body main section.category button {
+  body main section.category button, body main section.tag button {
     position: absolute;
     top: 0;
   }

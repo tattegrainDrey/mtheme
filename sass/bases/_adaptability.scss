@@ -43,9 +43,9 @@
             }
         }
         
-        button.back {
-            width: 12vw;
-            height: 4vw;
+        button.back {            
+            width: 9vw;
+            height: 3vw;
         }
     }
 }
@@ -53,7 +53,7 @@
 @media screen and (min-width: 901px) and (max-height: 700px) {
     body {
         main {
-            section.category {
+            section.category, section.tag {
                 display: grid;
                 grid-template-columns: auto auto auto;
                 gap: 3vw;
