@@ -6,7 +6,7 @@
         echo '<button class="back" onclick="window.history.back();">Go Back</button>';
         $post_count = 0;        
         $ad_query = new WP_Query(array(
-            'name' => 'past', // Slug of the post
+            'name' => 'ad', // Slug of the post
             'post_type' => 'post', // Ensure we're querying posts
             'posts_per_page' => 1 // We only need one post
         ));
