@@ -25,15 +25,10 @@ header {
             width: 100%;
             text-align: center;
         }
-        .custom-logo-link {
-            margin: auto calc(100%/2 - 75px) auto calc(100%/2 - 125px);
-            position: absolute;
-            left: 0;
-        }
         a:has(img.logo) {
-            position: unset;
+            position: unset !important;
 
-            @media screen and (min-width : 820px) {
+            @media screen and (min-width : 901px) {
                 display: flex;
                 align-items: center;
             }
@@ -41,7 +36,7 @@ header {
         .logo, .ico {
             margin: auto calc(50% - 40px) auto calc(50% - 90px);
             right: 0;
-            top: 0;
+            top: 2.5px;
             position: absolute;
         }
 
@@ -72,6 +67,13 @@ header {
                     color: $color1;
                 }
             } 
+        }
+    }
+    @media screen and (min-width : 901px) {
+        height: 9vh;
+
+        #menuico {
+            display: none;
         }
     }
 }

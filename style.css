@@ -30,7 +30,7 @@ body {
   margin: 0 !important;
   background-color: #F9EADC;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 901px) {
   body {
     overflow-x: hidden;
   }
@@ -120,15 +120,10 @@ header .fixtures h1 {
   width: 100%;
   text-align: center;
 }
-header .fixtures .custom-logo-link {
-  margin: auto calc(50% - 75px) auto calc(50% - 125px);
-  position: absolute;
-  left: 0;
-}
 header .fixtures a:has(img.logo) {
-  position: unset;
+  position: unset !important;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 901px) {
   header .fixtures a:has(img.logo) {
     display: flex;
     align-items: center;
@@ -137,7 +132,7 @@ header .fixtures a:has(img.logo) {
 header .fixtures .logo, header .fixtures .ico {
   margin: auto calc(50% - 40px) auto calc(50% - 90px);
   right: 0;
-  top: 0;
+  top: 2.5px;
   position: absolute;
 }
 header .fixtures ul {
@@ -167,6 +162,14 @@ header .fixtures ul a {
 }
 header .fixtures ul a:hover {
   color: #F9EADC;
+}
+@media screen and (min-width: 901px) {
+  header {
+    height: 9vh;
+  }
+  header #menuico {
+    display: none;
+  }
 }
 
 footer {
