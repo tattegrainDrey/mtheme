@@ -84,10 +84,6 @@ header {
                 li:nth-of-type(1) {
                     display: none;
                 }
-    
-                a {
-                    color: $color1;
-                }
             }
 
             a {
@@ -96,6 +92,10 @@ header {
                 transition: all 0.5s;
 
                 &:hover {
+                    color: $color1;
+                }
+
+                @media screen and (min-width: 901px) {
                     color: $color1;
                 }
             }
