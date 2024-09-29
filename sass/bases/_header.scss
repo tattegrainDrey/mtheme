@@ -20,12 +20,6 @@ header {
             z-index: 4;
         }
 
-        @media screen and (min-width: 901px) {
-            #menuico {
-                display: none;
-            }
-        }
-
         h1 {
             position: absolute;
             width: 100%;
@@ -34,11 +28,6 @@ header {
 
         a:has(img.logo) {
             position: unset !important;
-
-            @media screen and (min-width : 901px) {
-                display: flex;
-                align-items: center;
-            }
         }
 
         .logo,
@@ -67,25 +56,6 @@ header {
             background-color: #AB9487;
             @include basinset-shadow;
 
-            @media screen and (min-width : 901px) {
-                display: flex;
-                flex-direction: row;
-                position: absolute;
-                height: auto;
-                top: 0;
-                right: 0;
-                left: unset;
-                width: auto;
-                height: 100%;
-                gap: 1rem;
-                background-color: unset;
-                box-shadow: unset;
-
-                li:nth-of-type(1) {
-                    display: none;
-                }
-            }
-
             a {
                 text-decoration: none;
                 color: $color2;
@@ -94,15 +64,7 @@ header {
                 &:hover {
                     color: $color1;
                 }
-
-                @media screen and (min-width: 901px) {
-                    color: $color1;
-                }
             }
         }
-    }
-
-    @media screen and (min-width : 901px) {
-        height: 9vh;
     }
 }

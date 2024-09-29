@@ -30,11 +30,6 @@ body {
   margin: 0 !important;
   background-color: #F9EADC;
 }
-@media screen and (min-width: 901px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 body main {
   margin: 12vh 7vw 4vh;
 }
@@ -115,11 +110,6 @@ header .fixtures #menuico {
   position: relative;
   z-index: 4;
 }
-@media screen and (min-width: 901px) {
-  header .fixtures #menuico {
-    display: none;
-  }
-}
 header .fixtures h1 {
   position: absolute;
   width: 100%;
@@ -127,12 +117,6 @@ header .fixtures h1 {
 }
 header .fixtures a:has(img.logo) {
   position: unset !important;
-}
-@media screen and (min-width: 901px) {
-  header .fixtures a:has(img.logo) {
-    display: flex;
-    align-items: center;
-  }
 }
 header .fixtures .logo,
 header .fixtures .ico {
@@ -161,25 +145,6 @@ header .fixtures ul {
   -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 901px) {
-  header .fixtures ul {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    height: auto;
-    top: 0;
-    right: 0;
-    left: unset;
-    width: auto;
-    height: 100%;
-    gap: 1rem;
-    background-color: unset;
-    box-shadow: unset;
-  }
-  header .fixtures ul li:nth-of-type(1) {
-    display: none;
-  }
-}
 header .fixtures ul a {
   text-decoration: none;
   color: #704214;
@@ -187,16 +152,6 @@ header .fixtures ul a {
 }
 header .fixtures ul a:hover {
   color: #F9EADC;
-}
-@media screen and (min-width: 901px) {
-  header .fixtures ul a {
-    color: #F9EADC;
-  }
-}
-@media screen and (min-width: 901px) {
-  header {
-    height: 9vh;
-  }
 }
 
 footer {
