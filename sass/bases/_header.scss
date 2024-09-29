@@ -31,9 +31,6 @@ header {
             left: 0;
         }
         a:has(img.logo) {
-            width: 100%;
-            height: 100%;
-            position: absolute;
 
             @media screen and (min-width : 820px) {
                 display: flex;
@@ -43,6 +40,7 @@ header {
         .logo, .ico {
             margin: auto calc(50% - 40px) auto calc(50% - 90px);
             right: 0;
+            top: 0;
             position: absolute;
         }
 

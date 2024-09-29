@@ -56,7 +56,7 @@ body main a:hover {
   color: #704214;
 }
 body .logo {
-  height: 80px;
+  height: calc(8vh - 50px);
   width: auto;
 }
 
@@ -125,11 +125,6 @@ header .fixtures .custom-logo-link {
   position: absolute;
   left: 0;
 }
-header .fixtures a:has(img.logo) {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
 @media screen and (min-width: 820px) {
   header .fixtures a:has(img.logo) {
     display: flex;
@@ -139,6 +134,7 @@ header .fixtures a:has(img.logo) {
 header .fixtures .logo, header .fixtures .ico {
   margin: auto calc(50% - 40px) auto calc(50% - 90px);
   right: 0;
+  top: 0;
   position: absolute;
 }
 header .fixtures ul {

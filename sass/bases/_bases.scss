@@ -83,7 +83,7 @@ body {
     }
 
     .logo {
-        height: 80px;
+        height: calc(8vh - 50px);
         width: auto;
     }
 }
