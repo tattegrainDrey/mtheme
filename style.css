@@ -377,6 +377,8 @@ section.tag h1 {
   }
   body main section.category article.article, body main section.tag article.article {
     width: 33.33%;
+    box-sizing: border-box;
+    margin: auto 0.5vw;
   }
   body main section.category article.wpads, body main section.tag article.wpads {
     width: 100%;
