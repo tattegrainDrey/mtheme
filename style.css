@@ -326,6 +326,10 @@ section.tag h1 {
   body header .fixtures #menuico {
     display: none;
   }
+  body header .fixtures .custom-logo-link img {
+    height: 15vh;
+    width: auto;
+  }
   body header .fixtures ul {
     display: flex;
     flex-direction: row;

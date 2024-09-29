@@ -1,16 +1,24 @@
 @media screen and (min-width: 901px) {
     body {
         overflow-x: hidden;
-    
+
         header {
             height: 10vh;
+
             .fixtures {
                 #menuico {
                     display: none;
                 }
-    
+
+                .custom-logo-link {
+                    img {
+                        height: 15vh;
+                        width: auto;
+                    }
+                }
+
                 ul {
-                    
+
                     display: flex;
                     flex-direction: row;
                     position: absolute;
@@ -23,17 +31,17 @@
                     gap: 1rem;
                     background-color: unset;
                     box-shadow: unset;
-    
+
                     li:nth-of-type(1) {
                         display: none;
                     }
-    
+
                     a {
                         color: $color1;
                     }
                 }
             }
         }
-        
+
     }
 }
