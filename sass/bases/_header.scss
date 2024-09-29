@@ -31,6 +31,7 @@ header {
             left: 0;
         }
         a:has(img.logo) {
+            position: unset;
 
             @media screen and (min-width : 820px) {
                 display: flex;
