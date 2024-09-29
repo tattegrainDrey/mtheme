@@ -284,6 +284,10 @@ section.nosearch span.result {
   text-decoration: underline solid black;
 }
 
+#searchform button {
+  background-color: #F9EADC;
+}
+
 section article .metainfo {
   font-size: small;
   display: flex;
