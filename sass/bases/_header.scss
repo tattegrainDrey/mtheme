@@ -15,7 +15,7 @@ header {
         margin: auto 3vw;
         position: relative;
 
-        &:has(h1 & .menu) {
+        &:has(h1, .menu) {
             text-align: initial;
         }
 
