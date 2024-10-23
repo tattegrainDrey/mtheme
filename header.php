@@ -76,7 +76,7 @@
                 the_custom_logo();
                 echo "<script>console.log('choice 4')</script>";
             } else {
-                echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";
+                echo "<h1 class='long'> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";
                 echo "<script>console.log('choice 5')</script>";
             }
             ?>

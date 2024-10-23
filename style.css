@@ -111,9 +111,6 @@ header .fixtures {
   margin: auto 3vw;
   position: relative;
 }
-header .fixtures:has(h1):has(.menu) h1 {
-  text-align: initial;
-}
 header .fixtures #menuico {
   position: relative;
   z-index: 4;
@@ -122,6 +119,9 @@ header .fixtures h1 {
   position: absolute;
   width: 100%;
   text-align: center;
+}
+header .fixtures h1.long {
+  text-align: left;
 }
 header .fixtures a:has(img.logo) {
   position: unset !important;

@@ -15,12 +15,6 @@ header {
         margin: auto 3vw;
         position: relative;
 
-        &:has(h1):has(.menu) {
-            h1 {
-                text-align: initial;
-            }
-        }
-
         #menuico {
             position: relative;
             z-index: 4;
@@ -30,6 +24,10 @@ header {
             position: absolute;
             width: 100%;
             text-align: center;
+
+            &.long {
+                text-align: left;
+            }
         }
 
         a:has(img.logo) {
