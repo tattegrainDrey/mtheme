@@ -22,6 +22,7 @@
             }
             document.cookie = "width = " + width;
             document.cookie = "height = " + height; 
+            console.log('dimensions : ',width, height, sect)
         })
 
         window.addEventListener("resize", () => {
@@ -63,15 +64,20 @@
             if (has_custom_logo() && has_site_icon()) {
                 if ($width < 900) {
                     echo "<a href=" . get_bloginfo('url') . "> <img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'> </a>";
+                    echo "<script>console.log('choice 1')</script>";
                 } else {
                     the_custom_logo();
+                    echo "<script>console.log('choice 2')</script>";
                 }
             } elseif (!has_custom_logo() && has_site_icon()) {
                 echo "<a href=" . get_bloginfo('url') . "> <img src=" . get_site_icon_url() . " alt='site ico' class='logo ico'> </a>";
+                echo "<script>console.log('choice 3')</script>";
             } elseif (!has_site_icon() && has_custom_logo()) {
                 the_custom_logo();
+                echo "<script>console.log('choice 4')</script>";
             } else {
                 echo "<h1> <a href=" . get_bloginfo('url') . ">" . get_bloginfo('name') . "</a> </h1>";
+                echo "<script>console.log('choice 5')</script>";
             }
             ?>
 
