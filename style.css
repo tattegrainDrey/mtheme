@@ -111,6 +111,9 @@ header .fixtures {
   margin: auto 3vw;
   position: relative;
 }
+header .fixtures:has(h1 header .fixtures .menu) {
+  text-align: initial;
+}
 header .fixtures #menuico {
   position: relative;
   z-index: 4;
